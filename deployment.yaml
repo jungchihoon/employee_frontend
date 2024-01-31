@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: employee-frontend
+  name: frontend
   labels:
-    app: employee-frontend
+    app: frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: employee-frontend
+      app: frontend
   template:
     metadata:
       labels:
-        app: employee-frontend
+        app: frontend
     spec:
       containers:
-      - name: employee-frontend
+      - name: frontend
         imagePullPolicy: Always
-        image: giglepeople/vue
+        image: giglepeople/frontend
         env:
         - name: BACKEND_API_URL
-          value: "http://employee-backend" 
+          value: "backend" 
         ports:
         - containerPort: 80
