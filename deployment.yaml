@@ -17,9 +17,9 @@ spec:
       containers:
       - name: frontend-vue
         imagePullPolicy: Always
-        image: ghcr.io/shclub/edu12-3
-        env:
-          - name: BACKEND_API_URL
-            value: "http://employee-backend" 
+        image: giglepeople/vue:v1
+          #env:
+          #- name: BACKEND_API_URL
+          #  value: "http://employee-backend" 
         ports:
         - containerPort: 80
