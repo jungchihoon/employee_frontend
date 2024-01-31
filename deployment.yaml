@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: frontend
-        imagePullPolicy: Always
         image: yyazi/vue_crud
+        imagePullPolicy: Always
         env:
         - name: BACKEND_API_URL
           value: "backend" 
