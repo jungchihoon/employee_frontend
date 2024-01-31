@@ -18,8 +18,8 @@ spec:
       - name: employee-frontend
         imagePullPolicy: Always
         image: giglepeople/vue
-          #env:
-          #- name: BACKEND_API_URL
-          #  value: "http://employee-backend" 
+        env:
+        - name: BACKEND_API_URL
+          value: "http://employee-backend" 
         ports:
         - containerPort: 80
