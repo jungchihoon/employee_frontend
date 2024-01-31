@@ -17,7 +17,7 @@ spec:
       containers:
       - name: frontend
         imagePullPolicy: Always
-        image: ghcr.io/ryunchang/vue_crud_security:latest
+        image: giglepeople/vue-final
         env:
         - name: BACKEND_API_URL
           value: "backend" 
