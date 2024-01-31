@@ -15,7 +15,7 @@ spec:
         app: employee-frontend
     spec:
       containers:
-      - name: frontend-vue
+      - name: employee-frontend
         imagePullPolicy: Always
         image: giglepeople/vue:v1
           #env:
