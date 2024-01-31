@@ -17,7 +17,7 @@ spec:
       containers:
       - name: employee-frontend
         imagePullPolicy: Always
-        image: giglepeople/vue:v1
+        image: giglepeople/vue
           #env:
           #- name: BACKEND_API_URL
           #  value: "http://employee-backend" 
