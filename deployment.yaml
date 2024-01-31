@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-frontend
+  labels:
+    app: employee-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: employee-frontend
+  template:
+    metadata:
+      labels:
+        app: employee-frontend
+    spec:
+      containers:
+      - name: frontend-vue
+        imagePullPolicy: Always
+        image: ghcr.io/shclub/edu12-3
+        env:
+          - name: BACKEND_API_URL
+            value: "http://backend-springboot" 
+        ports:
+        - containerPort: 80
