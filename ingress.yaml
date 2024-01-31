@@ -17,5 +17,5 @@ spec:
           service:
             name: employee-frontend
             port:
-              number: 31608
+              number: 80
 
